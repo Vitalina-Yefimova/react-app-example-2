@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import ControlledForm from './components/ControlledForm'
+import UncontrolledForm from './components/UncontrolledForm'
+import DataFetchingComponent from './components/DataFetchingComponent'
 
 function App() {
   return (
@@ -18,8 +21,16 @@ function App() {
           Learn React
         </a>
       </header>
+      <>
+        <h2>Controlled Component</h2>
+        <ControlledForm />
+        <h2>Uncontrolled Component</h2>
+        <UncontrolledForm />
+        <h2>Data Fetching Component</h2>
+        <DataFetchingComponent />
+      </>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
