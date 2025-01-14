@@ -4,7 +4,9 @@ import './ControlledForm.css'
 function ControlledForm() { // Этот компонент управляет значениями через состояние
   const [text, setText] = useState('') // State для текстового поля
   const [isChecked, setIsChecked] = useState(false)  // State для чекбокса
-
+  // Хук useState позволяет управлять состоянием внутри функционального компонента.
+  // Первый аргумент — это текущее значение состояния, второй — функция, которая обновляет его.
+  
   const handleTextChange = (event) => { // Обновляет state для текстового поля
     setText(event.target.value)
   }

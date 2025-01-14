@@ -1,5 +1,7 @@
-// useRef — это хук в React, который позволяет создавать рефы. 
+// useRef — это хук в React, который позволяет создавать рефы.
 // Рефы используются для доступа к DOM-элементам или сохранения значения, которое остаётся неизменным между рендерами компонента.
+// В отличие от контролируемых компонентов, здесь значения полей не управляются через состояние (useState). 
+// Вместо этого используется прямой доступ к DOM через рефы.
 
 import React, { useRef } from 'react'
 import './UncontrolledForm.css'
@@ -29,7 +31,6 @@ function UncontrolledForm() {
           placeholder="Type here..."
         />
       </div>
-      
       <div className="form-group">
         <label htmlFor="checkbox">Agree to Terms:</label>
         <input
@@ -42,5 +43,5 @@ function UncontrolledForm() {
     </form>
   )
 }
-
+ // ref={textInputRef} - привязывает DOM-элемент к рефу textInputRef
 export default UncontrolledForm
